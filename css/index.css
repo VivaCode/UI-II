@@ -1,7 +1,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+HTML5 display-role reset for older browsers 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
+Set every element's box-sizing to border-box 
 * {
     box-sizing: border-box;
 }
@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5 {
 
 .container {
   width: 880px;
-  /* TB LR */
+  /* TB LR 
   margin: 0 auto;
 }
 
-/* header */
+/* header 
 
 header nav {
   display: inline-block;
@@ -101,7 +101,7 @@ header .logo {
   margin-top: 25px;
 }
 
-/* cta */
+/* cta 
 
 .cta .cta-text {
   display: inline-block;
@@ -185,4 +185,87 @@ footer {
   margin: 32px 0;
   text-align: center;
   font-size: 14px;
+} */
+
+/* * {
+   border: 1px solid grey; 
+} */
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.container {
+width: 880px;
+/* TB LR */
+margin: 0 auto;
+}
+
+header nav{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: grey;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.cta {
+  display:flex;
+  align-items: center;
+  font-size: 50px;
+  justify-content: space-evenly;
+}
+.cta .cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 60%;
+
+}
+
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+
+.cta img {
+  margin-top: 69px;
+}
+
+.top-content {
+  display: flex;
+}
+
+.bottom-content {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
