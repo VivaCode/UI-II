@@ -18,12 +18,11 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
-/* *{border: 1px solid black} */
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -71,13 +70,11 @@ h1, h2, h3, h4, h5 {
 }
 
 /* header */
-header {
-  display: flex;
-  alight-items: center;
-}
+
 header nav {
-  display: flex;
+  display: inline-block;
   width: 691px;
+  vertical-align: top;
   margin-top: 35px;
 }
 
@@ -105,18 +102,12 @@ header .logo {
 }
 
 /* cta */
-.cta {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 40px;
-}
+
 .cta .cta-text {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   vertical-align: top;
   font-size: 77px;
-  /* margin-top: 120px; */
+  margin-top: 120px;
   text-align: center;
   padding: 0px 75px;
 }
@@ -126,21 +117,9 @@ header .logo {
   vertical-align: top;
   margin-top: 6px;
   padding: 8px 44px;
-  width: 185px;
   font-size: 17px;
-  display:flex;
-  justify-content: center;
   border: 1px solid black;
   cursor: pointer;
-}
-.cta-text{
-  display: flex;
-  align-items: center;
-}
-
-}
-}
-
 }
 
 .cta .cta-text button:hover {
@@ -149,8 +128,8 @@ header .logo {
 }
 
 .cta img {
-  /* display: inline-block;
-  margin-top: 69px; */
+  display: inline-block;
+  margin-top: 69px;
 }
 
 .main-content {
@@ -162,15 +141,10 @@ header .logo {
 .main-content .top-content {
   padding: 0 10px;
 }
-.top-content{
-  display: flex;
-  flex-direction: row;
-}
 
 .main-content .top-content .text-content {
   width: 410px;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   margin-right: 34px;
 }
 
@@ -186,16 +160,10 @@ header .logo {
   margin-top: 37px;
   padding: 0 10px;
 }
-.bottom-content{
-  display: flex;
-}
-.text-content{
-  display: flex;
-  flex-direction: column;
-}
+
 .main-content .bottom-content .text-content {
   width: 275px;
-  display: flex;
+  display: inline-block;
   margin-right: 12px;
 }
 
