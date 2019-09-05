@@ -270,7 +270,8 @@ html, body {
   .bottom-content {
 	display: flex;
 	justify-content: space-between;
-	padding: 0px 5px;
+  padding: 0px 5px;
+  border-bottom: 1px solid black;
   }
   
   footer {
